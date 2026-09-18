@@ -9,16 +9,13 @@
         h1 { text-align: center; color: #2c3e50; font-size: 1.8em; margin-top: 10px; margin-bottom: 15px; }
         h2 { border-left: 5px solid #34495e; padding-left: 10px; color: #2c3e50; font-size: 1.3em; margin-top: 15px; margin-bottom: 15px; }
         
-        /* 🚀 メインナビゲーションタブ */
         .main-nav { display: flex; gap: 5px; background: #2c3e50; padding: 5px 5px 0 5px; border-radius: 8px 8px 0 0; margin-bottom: 15px; flex-wrap: wrap; }
         .nav-btn { flex: 1; min-width: 120px; padding: 12px; background: #34495e; color: #ecf0f1; border: none; border-radius: 6px 6px 0 0; font-size: 16px; font-weight: bold; cursor: pointer; transition: 0.2s; text-align: center; }
         .nav-btn.active { background: #f4f7f6; color: #2c3e50; }
 
-        /* 📱 画面ビュー切り替え */
         .view-panel { display: none; }
         .view-panel.active { display: block; }
 
-        /* ⚙️ 設定エリア */
         .flex-container { display: flex; gap: 15px; margin-bottom: 15px; flex-wrap: wrap; }
         .card { background: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); flex: 1; min-width: 280px; box-sizing: border-box; }
         .card h3 { margin-top: 0; color: #34495e; font-size: 1.1em; margin-bottom: 8px; }
@@ -26,24 +23,20 @@
         input[type="text"] { padding: 10px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box; font-size: 16px; }
         .staff-input { width: 100%; border: 2px solid #34495e; }
 
-        /* 🔍 検索・フィルターエリア */
         .search-area { background: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 15px; display: flex; gap: 15px; align-items: center; flex-wrap: wrap; }
         .search-input { flex: 1; min-width: 200px; padding: 10px; border: 1px solid #34495e; border-radius: 6px; font-size: 16px; }
         .filter-label { font-weight: bold; cursor: pointer; font-size: 15px; display: flex; align-items: center; gap: 5px; }
         .filter-checkbox { transform: scale(1.3); }
 
-        /* ⚡ 一括操作エリア */
         .bulk-actions { background: #e8f4f8; padding: 15px; border-radius: 8px; margin-bottom: 15px; display: flex; gap: 15px; align-items: center; flex-wrap: wrap; border: 1px solid #a9cce3; }
         .bulk-actions h4 { margin: 0; color: #2980b9; font-size: 1em; width: 100%; }
 
-        /* 🗂️ 場所切り替えサブタブ */
         .tab-container { display: flex; gap: 8px; margin-bottom: 0; flex-wrap: wrap; }
         .tab-btn { padding: 10px 18px; background-color: #bdc3c7; color: #333; border: none; border-radius: 6px 6px 0 0; font-weight: bold; font-size: 14px; cursor: pointer; transition: 0.2s; }
         .tab-btn.active { background-color: #34495e; color: white; }
 
-        /* 📊 テーブルスタイル */
         .table-container { width: 100%; overflow-x: auto; background: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-radius: 0 8px 8px 8px; margin-bottom: 20px; }
-        table { width: 100%; border-collapse: collapse; min-width: 750px; }
+        table { width: 100%; border-collapse: collapse; min-width: 850px; }
         th, td { padding: 10px; text-align: left; border-bottom: 1px solid #ddd; font-size: 14px; vertical-align: middle; }
         th { background-color: #34495e; color: white; }
         
@@ -56,10 +49,8 @@
         .badge-return { background-color: #f1c40f; color: #333; }
         .badge-inspection { background-color: #9b59b6; color: white; }
 
-        /* サイン画像表示 */
         .sig-img { height: 45px; background: #fff; border: 1px solid #ccc; border-radius: 3px; vertical-align: middle; }
 
-        /* ボタン */
         button { padding: 10px 16px; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; font-size: 15px; }
         .btn-save { background-color: #27ae60; color: white; margin-top: 8px; width: 100%; }
         .btn-rent { background-color: #3498db; color: white; width: 100%; }
@@ -70,13 +61,11 @@
         .btn-clear { background-color: #c0392b; color: white; }
         .row-checkbox { transform: scale(1.4); cursor: pointer; display: block; margin: 0 auto; }
 
-        /* 📋 点検エリア */
         .inspection-area { background-color: #fff; border: 2px solid #0078d4; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
         .inspection-title { color: #0078d4; border-bottom: 1px solid #0078d4; padding-bottom: 8px; margin-top: 0; font-size: 1.2em; }
         .inspection-label { display: flex; align-items: center; gap: 10px; cursor: pointer; font-size: 15px; margin-bottom: 10px; background: #f8f9fa; padding: 10px; border-radius: 6px; border: 1px solid #e9ecef; }
         .btn-inspection { padding: 10px 20px; font-weight: bold; font-size: 15px; border: none; border-radius: 6px; transition: 0.2s; }
 
-        /* 🌟 ポップアップ（モーダル）スタイル */
         .modal-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); z-index: 1000; justify-content: center; align-items: center; }
         .modal-overlay.active { display: flex; }
         .modal-content { background: #fff; padding: 20px; border-radius: 12px; width: 95%; max-width: 600px; box-shadow: 0 5px 15px rgba(0,0,0,0.3); display: flex; flex-direction: column; gap: 15px; }
@@ -88,14 +77,12 @@
         .btn-modal-clear { background: #95a5a6; color: white; }
         .btn-modal-cancel { background: #7f8c8d; color: white; }
         .btn-modal-execute { background: #27ae60; color: white; }
-
     </style>
 </head>
 <body>
 
     <h1>🔑 鍵 貸出管理システム</h1>
 
-    <!-- 🚀 メインナビゲーション -->
     <div class="main-nav">
         <button class="nav-btn active" onclick="switchView('rentView', this)">🔑 貸出・返却</button>
         <button class="nav-btn" onclick="switchView('inspectionView', this)">📋 夕方定時点検</button>
@@ -103,20 +90,18 @@
         <button class="nav-btn" onclick="switchView('settingsView', this)">⚙️ システム設定</button>
     </div>
 
-    <!-- ================= 画面1: 🔑 貸出・返却 ================= -->
     <div id="rentView" class="view-panel active">
-        <!-- 🧑‍💼 受付担当者入力（datalistによるサジェスト機能付き） -->
         <div class="card" style="margin-bottom: 15px;">
             <div style="display: flex; align-items: center; gap: 15px; flex-wrap: wrap;">
                 <h3 style="margin:0; min-width: 160px;">🧑‍💼 本日の受付担当者:</h3>
                 <input type="text" id="currentStaff" class="staff-input" list="staffListOptions" style="flex:1; min-width: 200px;" placeholder="選択または直接入力（例：鈴木）">
                 <datalist id="staffListOptions"></datalist>
             </div>
-            <p style="margin: 5px 0 0 0; font-size: 12px; color: #7f8c8d;">※クリックまたは入力で候補（設定画面で変更可能）が表示されます。</p>
+            <p style="margin: 5px 0 0 0; font-size: 12px; color: #7f8c8d;">※クリックまたは入力で候補が表示されます。</p>
         </div>
 
         <div class="search-area">
-            <input type="text" id="searchKeyInput" class="search-input" oninput="initTable()" placeholder="🔍 鍵の名前で検索...">
+            <input type="text" id="searchKeyInput" class="search-input" oninput="initTable()" placeholder="🔍 鍵の名前や番号、保管場所で検索...">
             <label class="filter-label">
                 <input type="checkbox" id="onlyAvailableCheck" class="filter-checkbox" onchange="initTable()"> 🟢 保管中の鍵のみ表示
             </label>
@@ -137,12 +122,14 @@
                 <thead>
                     <tr>
                         <th style="width: 5%; text-align: center;"><input type="checkbox" id="selectAllCheck" onchange="toggleSelectAll(this)" style="transform:scale(1.2); cursor:pointer;"></th>
-                        <th style="width: 12%;">場所</th>
-                        <th style="width: 20%;">鍵の名前</th>
+                        <th style="width: 10%;">場所</th>
+                        <th style="width: 10%;">番号</th>
+                        <th style="width: 18%;">鍵の名前</th>
+                        <th style="width: 12%;">保管場所</th>
                         <th style="width: 10%;">状態</th>
-                        <th style="width: 25%;">借用者（貸出サイン）</th>
-                        <th style="width: 18%;">貸出日時</th>
-                        <th style="width: 10%;">操作</th>
+                        <th style="width: 15%;">借用者（貸出サイン）</th>
+                        <th style="width: 12%;">貸出日時</th>
+                        <th style="width: 8%;">操作</th>
                     </tr>
                 </thead>
                 <tbody id="keyTableBody"></tbody>
@@ -150,7 +137,6 @@
         </div>
     </div>
 
-    <!-- ================= 画面2: 📋 夕方定時点検 ================= -->
     <div id="inspectionView" class="view-panel">
         <div class="inspection-area">
             <h3 class="inspection-title">【夕方定時点検】個項目別・数量目視チェック</h3>
@@ -166,7 +152,6 @@
         </div>
     </div>
 
-    <!-- ================= 画面3: 📜 履歴・バックアップ ================= -->
     <div id="historyView" class="view-panel">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; flex-wrap: wrap; gap: 10px;">
             <h2 style="margin: 0;">📜 履歴</h2>
@@ -185,12 +170,13 @@
         </div>
     </div>
 
-    <!-- ================= 画面4: ⚙️ システム設定 ================= -->
     <div id="settingsView" class="view-panel">
         <h2>⚙️ システム環境設定</h2>
         <div class="flex-container">
             <div class="card">
-                <h3>🔑 鍵リスト設定</h3><textarea id="keyListInput"></textarea>
+                <h3>🔑 鍵リスト設定</h3>
+                <p style="font-size:12px; color:#666; margin-top:-5px;">フォーマット: 場所：鍵の番号：鍵の名前：鍵の保管場所</p>
+                <textarea id="keyListInput"></textarea>
             </div>
             <div class="card">
                 <h3>🧑‍💼 受付担当者サジェスト用リスト</h3><textarea id="staffListInput" placeholder="改行区切りで候補を入力"></textarea>
@@ -202,7 +188,6 @@
         <button class="btn-save" onclick="saveLists()">設定を保存する</button>
     </div>
 
-    <!-- 🌟 サイン・署名入力用 ポップアップ（モーダル） -->
     <div id="signatureModal" class="modal-overlay">
         <div class="modal-content">
             <h3 class="modal-title" id="modalTitle">手書きサイン入力</h3>
@@ -215,17 +200,12 @@
             </div>
         </div>
     </div>
-
     <script>
-        const defaultKeys = "事務所：会議室Aの鍵\n事務所：社長室の鍵\n工場：第1工場の鍵\n工場：公用車の鍵\n倉庫：危険物倉庫の鍵";
+        const defaultKeys = "事務所：1：会議室Aの鍵：キャビネットA-1\n事務所：2：社長室の鍵：キャビネットA-2\n工場：3：第1工場の鍵：キーボックスB-1\n工場：4：公用車の鍵：キーボックスB-2\n倉庫：5：危険物倉庫の鍵：金庫C-1";
         const defaultStaffs = "鈴木（総務）\n佐藤（警備）\n田中（業務）";
         const defaultInspections = "保管箱 1\nキーリング 1";
 
-        let savedKeyText = localStorage.getItem('keyNamesText_v13') || defaultKeys;
-        let savedStaffText = localStorage.getItem('staffListText_v13') || defaultStaffs;
-        let savedInspectionText = localStorage.getItem('inspectionListText_v13') || defaultInspections;
-        let keyData = JSON.parse(localStorage.getItem('keyManagementData_v13')) || {};
-        let historyLog = JSON.parse(localStorage.getItem('keyHistoryLog_v13')) || [];
+        let db = null;
         let currentTab = "すべて";
 
         const tableBody = document.getElementById("keyTableBody");
@@ -236,11 +216,91 @@
         const currentStaffInput = document.getElementById("currentStaff");
         const tabContainer = document.getElementById("tabContainer");
 
-        keyListInput.value = savedKeyText;
-        staffListInput.value = savedStaffText;
-        inspectionListInput.value = savedInspectionText;
+        function initDB() {
+            return new Promise((resolve, reject) => {
+                const request = indexedDB.open("KeyManagementDB", 1);
+                
+                request.onupgradeneeded = (e) => {
+                    db = e.target.result;
+                    if (!db.objectStoreNames.contains("keys")) db.createObjectStore("keys", { keyPath: "keyId" });
+                    if (!db.objectStoreNames.contains("settings")) db.createObjectStore("settings", { keyPath: "id" });
+                    if (!db.objectStoreNames.contains("history")) db.createObjectStore("history", { keyPath: "id" });
+                };
 
-        /* 📱 画面切り替え */
+                request.onsuccess = (e) => { db = e.target.result; resolve(); };
+                request.onerror = (e) => { reject(e.target.error); };
+            });
+        }
+
+        function getSetting(id, defaultValue) {
+            return new Promise((resolve) => {
+                const tx = db.transaction("settings", "readonly");
+                const req = tx.objectStore("settings").get(id);
+                req.onsuccess = () => resolve(req.result ? req.result.value : defaultValue);
+                req.onerror = () => resolve(defaultValue);
+            });
+        }
+
+        function setSetting(id, value) {
+            return new Promise((resolve) => {
+                const tx = db.transaction("settings", "readwrite");
+                tx.objectStore("settings").put({ id, value });
+                tx.oncomplete = () => resolve();
+            });
+        }
+
+        function getAllKeysFromDB() {
+            return new Promise((resolve) => {
+                const tx = db.transaction("keys", "readonly");
+                const req = tx.objectStore("keys").getAll();
+                req.onsuccess = () => resolve(req.result || []);
+                req.onerror = () => resolve([]);
+            });
+        }
+
+        function saveKeyToDB(keyObj) {
+            return new Promise((resolve) => {
+                const tx = db.transaction("keys", "readwrite");
+                tx.objectStore("keys").put(keyObj);
+                tx.oncomplete = () => resolve();
+            });
+        }
+
+        function getAllHistoryFromDB() {
+            return new Promise((resolve) => {
+                const tx = db.transaction("history", "readonly");
+                const req = tx.objectStore("history").getAll();
+                req.onsuccess = () => {
+                    const res = req.result || [];
+                    res.sort((a, b) => b.id - a.id);
+                    resolve(res);
+                };
+                req.onerror = () => resolve([]);
+            });
+        }
+
+        function addHistoryToDB(log) {
+            return new Promise((resolve) => {
+                const tx = db.transaction("history", "readwrite");
+                tx.objectStore("history").add(log);
+                tx.oncomplete = () => resolve();
+            });
+        }
+
+        function clearHistoryDB(filterFn) {
+            return new Promise((resolve) => {
+                const tx = db.transaction("history", "readwrite");
+                const store = tx.objectStore("history");
+                const req = store.getAll();
+                req.onsuccess = () => {
+                    const logs = req.result || [];
+                    store.clear();
+                    logs.forEach(l => { if (filterFn(l)) store.add(l); });
+                };
+                tx.oncomplete = () => resolve();
+            });
+        }
+
         function switchView(viewId, btnElem) {
             document.querySelectorAll('.view-panel').forEach(panel => panel.classList.remove('active'));
             document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('active'));
@@ -249,10 +309,9 @@
             if (viewId === 'rentView') initTable();
         }
 
-        /* 🌟 モーダル（ポップアップ）キャンバス管理 */
         let modalCanvasObj = null;
-        let currentActionType = ""; // 'rent-single', 'rent-bulk', 'return-single', 'return-bulk'
-        let currentTargetKey = ""; 
+        let currentActionType = ""; 
+        let currentTargetKeyId = ""; 
 
         function initModalCanvas() {
             const canvasElem = document.getElementById('modalCanvas');
@@ -290,16 +349,21 @@
             };
         }
 
-        window.addEventListener('load', () => {
+        window.addEventListener('load', async () => {
             initModalCanvas();
+            await initDB();
+
+            keyListInput.value = await getSetting('keyNamesText', defaultKeys);
+            staffListInput.value = await getSetting('staffListText', defaultStaffs);
+            inspectionListInput.value = await getSetting('inspectionListText', defaultInspections);
+
             updateStaffDatalist();
-            createTabs();
-            initTable();
+            await createTabs();
+            await initTable();
             createInspectionCheckboxes();
-            renderHistory();
+            await renderHistory();
         });
 
-        /* 受付担当者サジェスト（datalist）の更新 */
         function updateStaffDatalist() {
             const datalist = document.getElementById("staffListOptions");
             datalist.innerHTML = "";
@@ -311,7 +375,7 @@
             });
         }
 
-        function openModal(actionType, targetKeyName = "") {
+        async function openModal(actionType, targetKeyId = "") {
             const staffName = currentStaffInput.value.trim();
             if (staffName === "") {
                 alert("「本日の受付担当者」の名前を入力してください。");
@@ -320,16 +384,23 @@
             }
 
             currentActionType = actionType;
-            currentTargetKey = targetKeyName;
+            currentTargetKeyId = targetKeyId;
 
             const modal = document.getElementById('signatureModal');
             const title = document.getElementById('modalTitle');
             const message = document.getElementById('modalMessage');
             const btnExec = document.getElementById('btnModalExecute');
 
+            let targetName = "";
+            if (targetKeyId) {
+                const allKeys = await getAllKeysFromDB();
+                const found = allKeys.find(k => k.keyId === targetKeyId);
+                if (found) targetName = found.name;
+            }
+
             if (actionType === 'rent-single') {
                 title.textContent = "✍️ 借用者 サイン入力（貸出）";
-                message.textContent = `対象: ${targetKeyName}`;
+                message.textContent = `対象: ${targetName}`;
                 btnExec.textContent = "貸出を実行";
                 btnExec.style.backgroundColor = "#27ae60";
             } else if (actionType === 'rent-bulk') {
@@ -340,7 +411,7 @@
                 btnExec.style.backgroundColor = "#27ae60";
             } else if (actionType === 'return-single') {
                 title.textContent = "✍️ 返却者 サイン入力（返却）";
-                message.textContent = `対象: ${targetKeyName} （借りた人と異なる場合もこちらに記名）`;
+                message.textContent = `対象: ${targetName}`;
                 btnExec.textContent = "返却を実行";
                 btnExec.style.backgroundColor = "#e67e22";
             } else if (actionType === 'return-bulk') {
@@ -366,120 +437,173 @@
             modalCanvasObj.clear();
         }
 
-        /* モーダルからの処理実行 */
-        function executeActionFromModal() {
+        async function executeActionFromModal() {
             if (!modalCanvasObj.getHasStrokes()) {
-                alert("サイン（署名またはお名前）が描かれていません。枠内にご記入ください。");
+                alert("サインが描かれていません。枠内にご記入ください。");
                 return;
             }
 
             const staffName = currentStaffInput.value.trim();
             const nowStr = new Date().toLocaleString('ja-JP');
             const sigDataUrl = modalCanvasObj.toDataURL();
+            const allKeys = await getAllKeysFromDB();
 
             if (currentActionType === 'rent-single') {
-                keyData[currentTargetKey].status = "貸出中";
-                keyData[currentTargetKey].userSig = sigDataUrl;
-                keyData[currentTargetKey].date = nowStr;
-                keyData[currentTargetKey].staff = staffName;
-                addHistoryLog(nowStr, currentTargetKey, "貸出", sigDataUrl, staffName);
+                const target = allKeys.find(k => k.keyId === currentTargetKeyId);
+                if (target) {
+                    target.status = "貸出中";
+                    target.userSig = sigDataUrl;
+                    target.date = nowStr;
+                    target.staff = staffName;
+                    await saveKeyToDB(target);
+                    await addHistoryToDB({ id: Date.now(), date: nowStr, keyName: target.name, type: "貸出", user: sigDataUrl, staff: staffName, keyId: target.keyId });
+                }
             } 
             else if (currentActionType === 'rent-bulk') {
                 let processedCount = 0;
-                document.querySelectorAll(".row-checkbox:checked").forEach(cb => {
-                    const kName = cb.getAttribute("data-keyname");
-                    if (keyData[kName].status === "保管中") {
-                        keyData[kName].status = "貸出中";
-                        keyData[kName].userSig = sigDataUrl;
-                        keyData[kName].date = nowStr;
-                        keyData[kName].staff = staffName;
-                        addHistoryLog(nowStr, kName, "貸出", sigDataUrl, staffName);
+                const checkedBoxes = document.querySelectorAll(".row-checkbox:checked");
+                for (const cb of checkedBoxes) {
+                    const kId = cb.getAttribute("data-keyid");
+                    const target = allKeys.find(k => k.keyId === kId);
+                    if (target && target.status === "保管中") {
+                        target.status = "貸出中";
+                        target.userSig = sigDataUrl;
+                        target.date = nowStr;
+                        target.staff = staffName;
+                        await saveKeyToDB(target);
+                        await addHistoryToDB({ id: Date.now() + processedCount, date: nowStr, keyName: target.name, type: "貸出", user: sigDataUrl, staff: staffName, keyId: target.keyId });
                         processedCount++;
                     }
-                });
+                }
                 document.getElementById("selectAllCheck").checked = false;
                 alert(`${processedCount}件の鍵を一括貸出しました。`);
             }
             else if (currentActionType === 'return-single') {
-                addHistoryLog(nowStr, currentTargetKey, "返却", sigDataUrl, staffName);
-                keyData[currentTargetKey].status = "保管中";
-                keyData[currentTargetKey].userSig = "";
-                keyData[currentTargetKey].date = "-";
-                keyData[currentTargetKey].staff = staffName;
+                const target = allKeys.find(k => k.keyId === currentTargetKeyId);
+                if (target) {
+                    await addHistoryToDB({ id: Date.now(), date: nowStr, keyName: target.name, type: "返却", user: sigDataUrl, staff: staffName, keyId: target.keyId });
+                    target.status = "保管中";
+                    target.userSig = "";
+                    target.date = "-";
+                    target.staff = staffName;
+                    await saveKeyToDB(target);
+                }
             }
             else if (currentActionType === 'return-bulk') {
                 let processedCount = 0;
-                document.querySelectorAll(".row-checkbox:checked").forEach(cb => {
-                    const kName = cb.getAttribute("data-keyname");
-                    if (keyData[kName].status === "貸出中") {
-                        addHistoryLog(nowStr, kName, "返却", sigDataUrl, staffName);
-                        keyData[kName].status = "保管中";
-                        keyData[kName].userSig = "";
-                        keyData[kName].date = "-";
-                        keyData[kName].staff = staffName;
+                const checkedBoxes = document.querySelectorAll(".row-checkbox:checked");
+                for (const cb of checkedBoxes) {
+                    const kId = cb.getAttribute("data-keyid");
+                    const target = allKeys.find(k => k.keyId === kId);
+                    if (target && target.status === "貸出中") {
+                        await addHistoryToDB({ id: Date.now() + processedCount, date: nowStr, keyName: target.name, type: "返却", user: sigDataUrl, staff: staffName, keyId: target.keyId });
+                        target.status = "保管中";
+                        target.userSig = "";
+                        target.date = "-";
+                        target.staff = staffName;
+                        await saveKeyToDB(target);
                         processedCount++;
                     }
-                });
+                }
                 document.getElementById("selectAllCheck").checked = false;
                 alert(`${processedCount}件の鍵を一括返却しました。`);
             }
 
-            localStorage.setItem('keyManagementData_v13', JSON.stringify(keyData));
             closeModal();
-            initTable();
+            await initTable();
+            await renderHistory();
         }
 
-        function createTabs() {
-            const keyLines = keyListInput.value.split('\n').map(k => k.trim()).filter(k => k !== "");
+        async function createTabs() {
+            const text = keyListInput.value;
+            const lines = text.split('\n').map(k => k.trim()).filter(k => k !== "");
             const places = new Set(["すべて"]);
-            keyLines.forEach(line => {
-                if (line.includes("：")) places.add(line.split("：")[0].trim());
+            
+            lines.forEach(line => {
+                const parts = line.split("：").map(s => s.trim());
+                if (parts.length > 0 && parts[0] !== "") places.add(parts[0]);
             });
+
             tabContainer.innerHTML = "";
             places.forEach(place => {
                 const btn = document.createElement("button");
                 btn.textContent = place;
                 btn.className = `tab-btn ${place === currentTab ? 'active' : ''}`;
-                btn.onclick = () => {
+                btn.onclick = async () => {
                     currentTab = place;
                     document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
                     btn.classList.add("active");
                     document.getElementById("selectAllCheck").checked = false;
-                    initTable();
+                    await initTable();
                 };
                 tabContainer.appendChild(btn);
             });
         }
 
-        function initTable() {
+        async function initTable() {
             tableBody.innerHTML = "";
-            const keyLines = keyListInput.value.split('\n').map(k => k.trim()).filter(k => k !== "");
+            const lines = keyListInput.value.split('\n').map(k => k.trim()).filter(k => k !== "");
             const searchText = document.getElementById("searchKeyInput").value.toLowerCase().trim();
             const showOnlyAvailable = document.getElementById("onlyAvailableCheck").checked;
 
-            keyLines.forEach((line) => {
-                let place = "その他", keyName = line;
-                if (line.includes("：")) { [place, keyName] = line.split("：").map(s => s.trim()); }
+            const existingKeys = await getAllKeysFromDB();
+            const existingMap = new Map(existingKeys.map(k => [k.keyId, k]));
 
-                if (currentTab !== "すべて" && place !== currentTab) return;
-                if (searchText !== "" && !keyName.toLowerCase().includes(searchText)) return; 
+            const currentKeys = [];
 
-                if (!keyData[keyName]) keyData[keyName] = { status: "保管中", userSig: "", date: "-", staff: "-" };
-                const isBorrowed = keyData[keyName].status === "貸出中";
+            lines.forEach((line, index) => {
+                const parts = line.split("：").map(s => s.trim());
+                let place = "その他", number = String(index + 1), name = line, storageLocation = "-";
+
+                if (parts.length >= 4) {
+                    place = parts[0]; number = parts[1]; name = parts[2]; storageLocation = parts[3];
+                } else if (parts.length === 3) {
+                    place = parts[0]; number = parts[1]; name = parts[2];
+                } else if (parts.length === 2) {
+                    place = parts[0]; name = parts[1];
+                }
+
+                const keyId = `${place}_${number}_${name}`;
+                const existing = existingMap.get(keyId);
+                const keyObj = {
+                    keyId, place, number, name, storageLocation,
+                    status: existing ? existing.status : "保管中",
+                    userSig: existing ? existing.userSig : "",
+                    date: existing ? existing.date : "-",
+                    staff: existing ? existing.staff : "-"
+                };
+
+                saveKeyToDB(keyObj);
+                currentKeys.push(keyObj);
+            });
+
+            currentKeys.forEach((keyObj) => {
+                if (currentTab !== "すべて" && keyObj.place !== currentTab) return;
+                
+                if (searchText !== "") {
+                    const matchName = keyObj.name.toLowerCase().includes(searchText);
+                    const matchNum = keyObj.number.toLowerCase().includes(searchText);
+                    const matchStorage = keyObj.storageLocation.toLowerCase().includes(searchText);
+                    if (!matchName && !matchNum && !matchStorage) return;
+                }
+
+                const isBorrowed = keyObj.status === "貸出中";
                 if (showOnlyAvailable && isBorrowed) return;
 
                 const rowHtml = `
                     <tr>
-                        <td style="text-align:center;"><input type="checkbox" class="row-checkbox" data-keyname="${keyName}"></td>
-                        <td><span style="color:#7f8c8d; font-size:0.9em;">[${place}]</span></td>
-                        <td><strong>${keyName}</strong></td>
-                        <td><span class="status ${isBorrowed ? 'borrowed' : 'available'}">${keyData[keyName].status}</span></td>
-                        <td>${isBorrowed ? `<img src="${keyData[keyName].userSig}" class="sig-img">` : `<span style="color:#bdc3c7;">(未署名)</span>`}</td>
-                        <td><small>${keyData[keyName].date}</small></td>
+                        <td style="text-align:center;"><input type="checkbox" class="row-checkbox" data-keyid="${keyObj.keyId}"></td>
+                        <td><span style="color:#7f8c8d; font-size:0.9em;">[${keyObj.place}]</span></td>
+                        <td><strong>${keyObj.number}</strong></td>
+                        <td><strong>${keyObj.name}</strong></td>
+                        <td>${keyObj.storageLocation}</td>
+                        <td><span class="status ${isBorrowed ? 'borrowed' : 'available'}">${keyObj.status}</span></td>
+                        <td>${isBorrowed ? `<img src="${keyObj.userSig}" class="sig-img">` : `<span style="color:#bdc3c7;">(未署名)</span>`}</td>
+                        <td><small>${keyObj.date}</small></td>
                         <td>
                             ${isBorrowed 
-                                ? `<button class="btn-return" onclick="openModal('return-single', '${keyName}')">返却</button>` 
-                                : `<button class="btn-rent" onclick="openModal('rent-single', '${keyName}')">貸出</button>`
+                                ? `<button class="btn-return" onclick="openModal('return-single', '${keyObj.keyId}')">返却</button>` 
+                                : `<button class="btn-rent" onclick="openModal('rent-single', '${keyObj.keyId}')">貸出</button>`
                             }
                         </td>
                     </tr>
@@ -500,25 +624,23 @@
         }
 
         function prepareBulkReturn() {
-            const checkedBoxes = document.querySelectorAll(".row-checkbox:checked");
-            if (checkedBoxes.length === 0) {
+            if (document.querySelectorAll(".row-checkbox:checked").length === 0) {
                 alert("一括返却する鍵にチェックを入れてください。"); return;
             }
             openModal('return-bulk');
         }
 
-        function saveLists() {
-            localStorage.setItem('keyNamesText_v13', keyListInput.value);
-            localStorage.setItem('staffListText_v13', staffListInput.value);
-            localStorage.setItem('inspectionListText_v13', inspectionListInput.value);
+        async function saveLists() {
+            await setSetting('keyNamesText', keyListInput.value);
+            await setSetting('staffListText', staffListInput.value);
+            await setSetting('inspectionListText', inspectionListInput.value);
             updateStaffDatalist();
-            createTabs(); 
-            initTable(); 
+            await createTabs(); 
+            await initTable(); 
             createInspectionCheckboxes();
             alert("設定を保存しました！");
         }
 
-        /* 📋 点検・📜 履歴処理 */
         const inspectionCheckboxesContainer = document.getElementById("inspectionCheckboxesContainer");
         const submitInspectionBtn = document.getElementById("submitInspectionBtn");
         const inspectorNameInput = document.getElementById("inspectorName");
@@ -532,6 +654,7 @@
             });
             validateInspection();
         }
+
         function validateInspection() {
             const checkboxes = document.querySelectorAll('.inspection-check');
             const inspector = inspectorNameInput.value.trim();
@@ -543,23 +666,23 @@
         }
         inspectorNameInput.oninput = validateInspection;
 
-        function logInspection() {
+        async function logInspection() {
             const inspector = inspectorNameInput.value.trim();
             const staffName = currentStaffInput.value.trim() || "-";
-            addHistoryLog(new Date().toLocaleString('ja-JP'), "【点検】定時数量チェック", "点検", `全箇所 目視点検済`, `確認者: ${inspector} (受付: ${staffName})`);
+            const nowStr = new Date().toLocaleString('ja-JP');
+
+            await addHistoryToDB({ id: Date.now(), date: nowStr, keyName: "【点検】定時数量チェック", type: "点検", user: "全箇所 目視点検済", staff: `確認者: ${inspector} (受付: ${staffName})` });
+            
             document.querySelectorAll('.inspection-check').forEach(cb => cb.checked = false);
             inspectorNameInput.value = ""; validateInspection();
+            await renderHistory();
             alert("点検データを記録しました。");
         }
 
-        function addHistoryLog(date, keyName, type, user, staff) {
-            historyLog.unshift({ id: Date.now(), date, keyName, type, user, staff });
-            localStorage.setItem('keyHistoryLog_v13', JSON.stringify(historyLog));
-            renderHistory();
-        }
-
-        function renderHistory() {
+        async function renderHistory() {
             historyTableBody.innerHTML = "";
+            const historyLog = await getAllHistoryFromDB();
+
             historyLog.forEach(log => {
                 let badge = log.type === "貸出" ? "badge-rent" : log.type === "返却" ? "badge-return" : "badge-inspection";
                 let userDisp = log.user.startsWith("data:image") ? `<img src="${log.user}" class="sig-img">` : log.user;
@@ -567,7 +690,8 @@
             });
         }
 
-        function backupAndCleanupCompleted() {
+        async function backupAndCleanupCompleted() {
+            const historyLog = await getAllHistoryFromDB();
             const completed = historyLog.filter(l => l.type === "返却");
             if (completed.length === 0) return alert("返却済の履歴がありません。");
             if (!confirm(`返却済みの履歴（${completed.length}件）をバックアップし削除しますか？`)) return;
@@ -577,17 +701,18 @@
             a.download = `鍵貸出_バックアップ_${new Date().toISOString().split('T')[0]}.json`;
             a.click();
             
-            historyLog = historyLog.filter(l => l.type !== "返却");
-            localStorage.setItem('keyHistoryLog_v13', JSON.stringify(historyLog));
-            renderHistory();
+            await clearHistoryDB(l => l.type !== "返却");
+            await renderHistory();
             alert("バックアップとクリーンアップが完了しました。");
         }
 
-        function clearHistory() {
+        async function clearHistory() {
             if (confirm("すべての履歴を全消去しますか？\n（※貸出中のデータは保護されます）")) {
-                historyLog = historyLog.filter(l => l.type === "貸出" && keyData[l.keyName] && keyData[l.keyName].status === "貸出中" && keyData[l.keyName].date === l.date);
-                localStorage.setItem('keyHistoryLog_v13', JSON.stringify(historyLog));
-                renderHistory();
+                const allKeys = await getAllKeysFromDB();
+                const borrowedKeyIds = new Set(allKeys.filter(k => k.status === "貸出中").map(k => k.keyId));
+
+                await clearHistoryDB(l => l.type === "貸出" && borrowedKeyIds.has(l.keyId));
+                await renderHistory();
             }
         }
     </script>
